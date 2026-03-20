@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gabriel Gaspar — Portfólio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Canvas de partículas (atrás de tudo) -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Barra de progresso de scroll (topo da página) -->
+  <div id="scrollProgress"></div>
+
+  <div id="loader">Loading...</div>
+
+  <!-- Botão de tema — canto superior direito -->
+  <button id="themeToggle" aria-label="Alternar tema claro/escuro">☀️</button>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <header>
+    <img src="https://i.imgur.com/3EcFUil.jpeg" class="avatar" alt="Gabriel Gaspar">
+    <h1>Gabriel Gaspar</h1>
+    <p class="subtitle"><span id="typewriter"></span><span class="cursor">|</span></p>
+
+    <div class="links">
+      <a class="link" href="https://github.com/opagaspar" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github" aria-hidden="true"></i> GitHub
+      </a>
+      <a class="link" href="https://www.linkedin.com/in/gabrielgasparzs/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+      </a>
+      <a class="link" href="https://www.instagram.com/opagaspar_/" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+      </a>
+    </div>
+
+    <div class="links" style="margin-top: 10px;">
+      <a class="link link-site" href="https://opagaspar.github.io/gabrielgaspar/" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-globe" aria-hidden="true"></i> Meu LinkTree
+      </a>
+    </div>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <p>
+      Sou técnico de enfermagem com interesse em tecnologia, UX/UI design (Canva e Figma) e desenvolvimento full-stack (HTML, CSS, JS e Python).
+      <br><br>
+      Com experiência em ambiente hospitalar e sistemas utilizados nas instituições (MV e Tasy), especialmente em centro cirúrgico, atuando com assistência direta ao paciente, organização de procedimentos e trabalho em equipe multidisciplinar.
+      <br><br>
+      <strong>Ao longo da minha trajetória profissional desenvolvi habilidades como responsabilidade, atenção aos detalhes, disciplina e capacidade de atuar em ambientes de alta pressão.</strong>
+      <br><br>
+      Atualmente estou em transição de carreira para a área de tecnologia, estudando programação e desenvolvimento web, com foco em criação de interfaces e experiências digitais. Meu objetivo é construir um portfólio sólido, desenvolver projetos próprios e unir pensamento criativo, lógica e tecnologia para criar soluções digitais úteis e bem estruturadas.
+    </p>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+
+    <div class="project">
+      <div class="project-thumb-wrapper">
+        <img class="project-thumb-img" src="https://i.imgur.com/cYxmGPK.jpg" alt="Portfólio pessoal — captura">
+      </div>
+      <div class="project-content">
+        <h3><strong>Portfólio pessoal</strong></h3>
+        <p>Site desenvolvido em HTML, CSS e JavaScript. Demonstração de layout responsivo e animações leves.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-thumb-wrapper">
+        <img class="project-thumb-img" src="https://i.imgur.com/bkJSASE.jpg" alt="Projeto UX UI — mockup">
+      </div>
+      <div class="project-content">
+        <h3><strong>Projeto UI Design</strong></h3>
+        <p>Interfaces criadas utilizando Canva e Figma; foco em prototipação e usabilidade.</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-thumb-wrapper">
+        <img class="project-thumb-img" src="https://i.imgur.com/Dxszb9i.jpg" alt="Projeto Front-end — screenshot">
+      </div>
+      <div class="project-content">
+        <h3><strong>Projeto Front-end</strong></h3>
+        <p>Exemplos de componentes reutilizáveis e integração com APIs públicas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="IA">
+    <h2>Minha visão sobre IA</h2>
+    <p>
+      O uso de inteligência artificial (IA) no processo criativo e na programação acelera ideias, automatiza tarefas complexas e amplia a capacidade humana de experimentar soluções. Em vez de substituir a criatividade, a IA atua como uma ferramenta que potencializa o pensamento, permitindo testar conceitos, gerar códigos e estruturar projetos com muito mais rapidez.
+      <br><br>
+      Esse modelo de colaboração entre humanos e máquinas representa uma mudança tecnológica significativa. À medida que os sistemas evoluem e se tornam mais acessíveis, o uso de IA tende a crescer de forma exponencial, tornando-se parte essencial do desenvolvimento de software, inovação digital e criação de novos produtos.
+    </p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p><i class="fas fa-envelope" style="margin-right:6px; color:#8c52ff;"></i><span id="emailContato"></span></p>
+  </section>
+
+  <footer>
+    © 2026 Gabriel Gaspar
+  </footer>
+
+  <!-- Botão WhatsApp -->
+  <a
+    class="whatsapp"
+    id="whatsappBtn"
+    href="https://wa.me/5511983930646"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir WhatsApp"
+  >
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Botão flutuante de email -->
+  <a class="floating-label" id="floatingEmail" href="#" aria-label="Enviar email para Gabriel">
+    <span class="label-icon" aria-hidden="true"><i class="fas fa-envelope"></i></span>
+    <span class="label-text">Email</span>
+  </a>
+
+  <!-- JS externo -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
